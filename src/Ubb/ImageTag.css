@@ -1,0 +1,18 @@
+
+
+.hiddenImage {
+    display: block;
+    color: rgb(121,184,202);
+    width: 7rem;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid rgb(121,184,202);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    line-height: normal;
+    white-space: nowrap;
+    margin-top: 1rem;
+    font-family: 微软雅黑;
+}
