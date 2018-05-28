@@ -16,7 +16,7 @@ export class QuoteTagHandler extends Ubb.RecursiveTagHandler {
  
 		const style = {
 
-			padding: '13px 19px 13px 17px',
+			padding: '2px 2px 2px 2px',
 			backgroundColor: '#F5FAFF',
 			border: '1px solid rgb(204,204,204)',
             marginLeft: '0px',

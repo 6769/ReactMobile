@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import getUserToken from './Utility';
 import {Topic,APost} from './UiDataModel';
-import {isNumber} from 'util';
+
 
 
 export class OneTopic{
@@ -80,6 +80,12 @@ export class OneTopic{
 
         },this.errorcallback);
 
+    }
+
+    protected async fetchPostInfo(){
+        let url:string=format(PostsUrl,this.mtopicInfo.id,(this.targetPage-1)*10);
+        let apostresp=await fetch(url);
+        let apostjson=await apostresp.json();
     }
 
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, WhiteSpace, WingBlank} from 'antd-mobile';
+import {Card, WhiteSpace} from 'antd-mobile';
 import {Icon, Avatar} from 'antd';
 
 import ReactMarkdown from 'react-markdown';
@@ -50,7 +50,7 @@ function getLabelForFloorX(i:number) {
     const FLOOR_LABELS = ["unset", "楼主", "沙发", "板凳", "地毯", "地板", "地下室"];
     let ret:string = FLOOR_LABELS[0];
     if (i < FLOOR_LABELS.length) {
-        ret = FLOOR_LABELS[i];
+        ret = FLOOR_LABELS[i]+" 楼层 " + i;
     }
     else {
         ret = "楼层 " + i;

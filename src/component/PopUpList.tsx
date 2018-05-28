@@ -8,7 +8,7 @@ import {APost} from '../forum/UiDataModel';
 import FaceIcon from './icon/FaceIcon.svg';
 import TextSms from './icon/Textsms.svg';
 import Comment from './icon/Comment.svg';
-const myImg = src => <img src={src} className="am-icon am-icon-xs" alt="" />;
+const myImg = src => <img src={src} style={iconStyles} className="am-icon am-icon-xs" alt="" />;
 
 const Item = Popover.Item;
 
@@ -16,7 +16,7 @@ const iconStyles = {
     marginLeft: -5,
     marginTop: -3,
     whiteSpace: 'nowrap',
-    paddingRight: 5,
+    paddingRight: 1,
     color: 'gray',
 };
 

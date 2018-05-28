@@ -1,6 +1,7 @@
 import moment from 'moment';
 
-const DATE_FORMAT="YYYY-MM-DD hh:mm";
+const DATE_FORMAT="YYYY-MM-DD h:mm A";
+moment.locale('en');
 
 export class APost{
 
