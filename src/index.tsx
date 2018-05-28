@@ -8,7 +8,6 @@ import {PostContent} from './component/PostContent';
 import {getTopicId} from './forum/Utility';
 
 
-
 const onetopic=new OneTopic(getTopicId());
 ReactDOM.render(
     <PostContent atopic={onetopic}/>,

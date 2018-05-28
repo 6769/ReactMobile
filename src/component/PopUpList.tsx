@@ -4,7 +4,11 @@ import ReactDOM from 'react-dom';
 import {APost} from '../forum/UiDataModel';
 
 
-import {Textsms, Face, Comment} from 'material-ui-icons';
+
+import FaceIcon from './icon/FaceIcon.svg';
+import TextSms from './icon/Textsms.svg';
+import Comment from './icon/Comment.svg';
+const myImg = src => <img src={src} className="am-icon am-icon-xs" alt="" />;
 
 const Item = Popover.Item;
 
@@ -78,11 +82,12 @@ export class PopUpList extends Component<PopUpListProps> {
             <Popover placement='bottomRight' mask={true}   overlayStyle={{color: 'currentColor'}}
                      visible={this.state.visible}
                      overlay={[
-                         (<Item key="0" value={0} icon={<Comment style={iconStyles}/>}>Quote</Item>),
+                         (<Item key="0" value={0}
+                                icon={myImg(Comment)}>Quote</Item>),
                          (<Item key="1" value={1} disabled={this.props.apost.anonymous}
-                                icon={<Textsms style={iconStyles}/>}>Message</Item>),
+                                icon={myImg(TextSms)}>Message</Item>),
                          (<Item key="2" value={2} disabled={this.props.apost.anonymous}
-                                icon={<Face style={iconStyles}/>}>User</Item>),
+                                icon={myImg(FaceIcon)}>User</Item>),
                      ]}
 
                      onVisibleChange={this.handleVisibleChange}

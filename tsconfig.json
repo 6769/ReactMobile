@@ -11,14 +11,15 @@
     "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": false,
-    "noImplicitThis": true,
+    "noImplicitThis": false,
     "noImplicitAny": false,
-    "noEmitOnError": true,
+    "noEmitOnError": false,
     "removeComments": false,
     "strictNullChecks": false,
     "suppressImplicitAnyIndexErrors": true,
     "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": false
+    "noUnusedLocals": false,
+    "skipLibCheck":true
   },
   "exclude": [
     "node_modules",
@@ -26,7 +27,6 @@
     "scripts",
     "acceptance-tests",
     "webpack",
-    "jest",
-    "src/setupTests.ts"
+    "jest"
   ]
 }
