@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import {PopUpList} from './PopUpList';
 import {UbbContainer} from './UbbContainer';
 import {APost} from '../forum/UiDataModel';
-import './PostContentItem.css';
+import './PostContentItem.scss';
 
 export class PostContentItemProps{
     apost:APost;

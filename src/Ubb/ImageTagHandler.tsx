@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import * as Ubb from './Core';
-import './ImageTag.css';
+import './ImageTag.scss';
 
 export class ImageTagHandler extends Ubb.TextTagHandler {
     innerHTML: JSX.Element;

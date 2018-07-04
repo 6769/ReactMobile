@@ -14,7 +14,7 @@ import { Pagination } from 'antd-mobile';
 import {APost,Topic} from '../forum/UiDataModel';
 import {OneTopic} from '../forum/Network';
 import {PostContentItem} from './PostContentItem';
-import './PostContent.css'
+import './PostContent.scss'
 
 
 const backStyle = {background: '#ECECEC'};
